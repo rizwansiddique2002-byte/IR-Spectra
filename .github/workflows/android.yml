@@ -15,7 +15,8 @@ jobs:
         uses: ArtemSerebrennkov/buildozer-action@v1
         with:
           buildozer_version: master
-          python_version: 3.10
+          workdir: .
+          build_cmd: android debug
 
       - name: Upload APK
         uses: actions/upload-artifact@v2
